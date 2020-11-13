@@ -24,9 +24,17 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/bootstrap-datepicker3.min.css",
+              "src/style.bundle.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/moment/min/moment.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/bootstrap-datepicker.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "test-datepicker"
 }

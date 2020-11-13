@@ -1,1 +1,21 @@
-<h1>Hello</h1>
+<div [formGroup]="filterForm">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" formGroupName="contact_name" id="name">
+    </div>
+    <div id="sandbox-container">
+        <label for="date_created">Date created</label>
+        <div class="input-group input-daterange" formGroupName="date_created" id="date_created">
+            <input type="text" class="form-control" formControlName="start_date" placeholder="From" name="start">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    <i class="la la-ellipsis-h"></i>
+                </span>
+            </div>
+            <input type="text" class="form-control" formControlName="end_date" placeholder="To" name="end">
+        </div>
+    </div>
+    <div>
+        <button (click)="onClick()">Click here</button>
+    </div>
+</div>
